@@ -29,7 +29,7 @@ def get_valid_input(prompt):
             num = float(input("Enter {}: ".format(prompt)))
             value_input = True
             return num
-        except:
+        except ValueError:
             print("Enter a valid input.")
 
 
