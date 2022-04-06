@@ -8,6 +8,7 @@ class_infos = []
 
 
 def main():
+    """Start Program"""
     get_data()
     control = 0
     for x in range(len(class_infos)):

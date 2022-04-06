@@ -2,6 +2,7 @@ numbers = []
 
 
 def main():
+    """Start Program"""
     for x in range(5):
         num = int(input("Number: "))
         numbers.append(num)

@@ -16,6 +16,7 @@ def main():
 
 
 def display_report(incomes, num_month):
+    """Display report in a formatted way."""
     print("\nIncome Report\n-------------")
     total = 0
     for month in range(1, num_month + 1):

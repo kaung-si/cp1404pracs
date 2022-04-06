@@ -6,6 +6,7 @@ LINE = 6
 
 
 def main():
+    """Iterate a line of random numbers for input times"""
     choice = get_valid_input()
     for choice in range(choice):
         print(" ".join("{:2}".format(x) for x in generate_random_numbers()))
@@ -13,7 +14,7 @@ def main():
 
 
 def get_valid_input():
-    """Prevent input error"""
+    """Prevent integer 0 input"""
     num = int(input("How many quick picks? "))
     while num < 0:
         print("That's not possible.")
@@ -22,6 +23,7 @@ def get_valid_input():
 
 
 def generate_random_numbers():
+    """Create a list of non-repetitive random numbers between LOW and HIGH"""
     numbers = []
     for x in range(LINE):
         rdm_number = random.randint(LOW, HIGH)
