@@ -25,6 +25,7 @@ def get_data():
         parts = line.split(',')
         parts[2] = int(parts[2])
         class_infos.append(parts)
+    input_file.close()
 
 
 main()
