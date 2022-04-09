@@ -10,11 +10,9 @@ class_infos = []
 def main():
     """Start Program"""
     get_data()
-    control = 0
     for x in range(len(class_infos)):
-        print("{} is taught by {} and has {} students".format(class_infos[control][0], class_infos[control][1],
-                                                              class_infos[control][2]))
-        control += 1
+        print("{} is taught by {} and has {} students".format(class_infos[x][0], class_infos[x][1],
+                                                              class_infos[x][2]))
 
 
 def get_data():
@@ -25,6 +23,7 @@ def get_data():
         parts = line.split(',')
         parts[2] = int(parts[2])
         class_infos.append(parts)
+    print(class_infos)
     input_file.close()
 
 
