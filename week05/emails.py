@@ -6,9 +6,10 @@ def main():
         question = input("Is your name {} (Y/n) ".format(get_name_from_email(email)))
         if question != "" and question.upper() != "Y":
             name = input("Name: ")
-        email_to_name[email] = name
+        email_to_name[email] = name  # saved in email_to_name dict
         email = input("Email: ")
     print()
+    print(email_to_name)
     for email, name in email_to_name.items():
         print("{} ({})".format(name, email))
 
